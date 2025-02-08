@@ -1,3 +1,18 @@
-<div>
-    <!-- Simplicity is the consequence of refined emotions. - Jean D'Alembert -->
-</div>
+@extends('layout')
+@section('content')
+    <form action="{{route('hotels.store')}}" method="post">
+        @csrf
+        <div class="mb-2">
+            <label for="" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="mb-2">
+            <label for="" class="form-label">Location</label>
+            <input type="text" class="form-control" name="location">
+        </div>
+        <div class="mb-2">
+            <a href="{{route('hotels.index')}}" class="btn btn-info">Back</a>
+            <input type="submit" class="btn btn-success" value="Add new">
+        </div>
+    </form>
+@endsection

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>List</h1>
-    <a href="{{ route('hotels.edit') }}" class="btn btn-success">Add new +</a>
+    <a href="{{ route('hotels.create') }}" class="btn btn-success">Add new +</a>
     <table class="table">
         <thead>
             <th>#Id</th>
